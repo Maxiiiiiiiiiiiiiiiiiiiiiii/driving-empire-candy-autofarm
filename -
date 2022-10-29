@@ -1,0 +1,9 @@
+game:GetService'RunService'.Heartbeat:Connect(function()
+for I,V in pairs(game:GetService("Workspace").Game.Halloween:GetDescendants()) do 
+             if V.Name == "Candy" and V:FindFirstChild("TouchInterest") then
+                 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, V, 0)
+                 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, V, 1)
+           end
+
+end
+end);
